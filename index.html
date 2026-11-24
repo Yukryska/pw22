@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" id="home">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petworld · Pet Store &amp; Beyond</title>
+  <meta name="description" content="Petworld landing page. Discover pet food, accessories, veterinary care, and grooming.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner wrap">
+      <a class="brand" href="#home"><img src="assets/petworld.svg" alt="Petworld home" width="154" height="35"></a>
+      <nav class="account-nav" aria-label="Account">
+        <a href="">Sign Up</a>
+        <a class="button button-blue login" href="">Log in</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <h1 id="hero-title">Pet Store &amp; Beyond</h1>
+          <p class="hero-description muted">This is a sample landing page, created with Figma and Anima.<br class="mobile-break"> No coding involved.</p>
+          <a class="button button-yellow" href="">Get Started</a>
+        </div>
+        <img class="hero-photo" src="assets/hero-dogs.jpg" width="500" height="460"
+             alt="Two dogs sitting together in brightly patterned jackets" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="video-section" aria-label="Petworld video">
+      <div class="video-frame">
+        <button class="video-cover" type="button" aria-label="Play Petworld video">
+          <img class="video-poster" src="assets/video-poster.jpg" width="765" height="460" alt="">
+          <img class="play-icon" src="assets/play.svg" width="46" height="51" alt="">
+        </button>
+        <video id="petworld-video" aria-label="A dog with its owner" preload="none" controls playsinline hidden>
+          <source src="assets/petworld-video.mp4" type="video/mp4">
+        </video>
+        <noscript><a class="video-fallback" href="assets/petworld-video.mp4">Open Petworld video</a></noscript>
+      </div>
+    </section>
+
+    <section class="partners" aria-label="Partner logos">
+      <ul>
+        <li><img src="assets/nestle.svg" alt="Nestlé" width="133" height="35"></li>
+        <li><img src="assets/apple.svg" alt="Apple" width="29" height="35"></li>
+        <li><img class="beco" src="assets/beco.svg" alt="Beco" width="60" height="40"></li>
+        <li><img src="assets/amazon.svg" alt="Amazon" width="116" height="35"></li>
+        <li><img src="assets/google.svg" alt="Google" width="106" height="35"></li>
+        <li><img src="assets/walmart.svg" alt="Walmart" width="140" height="35"></li>
+      </ul>
+    </section>
+
+    <section class="features" id="features" aria-labelledby="features-title">
+      <h2 class="sr-only" id="features-title">Petworld services</h2>
+      <ul class="feature-list">
+        <li class="feature" id="pet-food">
+          <img src="assets/pet-food.svg" width="85" height="85" alt="">
+          <h3>Best quality pet food</h3>
+          <p class="muted">Super delicious food. Available in a range of delicious flavors.</p>
+        </li>
+        <li class="feature" id="accessories">
+          <img src="assets/accessories.svg" width="85" height="85" alt="">
+          <h3>Toys &amp; Accessories</h3>
+          <p class="muted">Soft toys, chew toys, and rope toys. Strong, interactive, and fun.</p>
+        </li>
+        <li class="feature" id="medical">
+          <img src="assets/medical.svg" width="85" height="85" alt="">
+          <h3>Pets medical care</h3>
+          <p class="muted">You can get a wide range of great treatments for your dog.</p>
+        </li>
+        <li class="feature" id="grooming">
+          <img src="assets/grooming.svg" width="85" height="85" alt="">
+          <h3>Full service grooming</h3>
+          <p class="muted">It's the right time to groom your dog with a variety of treatments.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="testimonial" id="our-story" aria-label="Customer testimonial">
+      <div class="testimonial-inner">
+        <div class="portrait"><img src="assets/dylan-shaw.jpg" width="353" height="400" alt="Dylan Shaw"></div>
+        <figure class="review">
+          <img class="quote-icon" src="assets/quote.svg" width="62" height="46" alt="">
+          <blockquote>
+            <p>We love using 'PETWORLD' products. Environmentally friendly and sustainable.<br>
+              We have the sustainable dog bowls and regularly use the mint scented poo bags which were all such great value for money.</p>
+          </blockquote>
+          <figcaption class="muted">Dylan Shaw</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div class="contact-copy">
+          <h2 id="contact-title">Let’s talk, woof!</h2>
+          <p class="muted">You can ask us questions about your pet, and we will be happy to answer you!</p>
+          <a class="button button-yellow" href="">Contact us</a>
+        </div>
+        <img class="contact-photo" src="assets/contact-dog.jpg" alt="A French bulldog on a yellow background" width="475" height="360">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="brand" href="#home"><img src="assets/petworld.svg" alt="Petworld home" width="154" height="35"></a>
+      <form class="newsletter" id="newsletter">
+        <label for="email">Updates right to your Inbox</label>
+        <div class="newsletter-fields">
+          <input id="email" type="email" autocomplete="email" placeholder="Email Address" required>
+          <button class="button button-blue" type="submit">Send</button>
+        </div>
+        <p class="newsletter-status" id="newsletter-status" role="status" hidden></p>
+      </form>
+      <nav class="footer-nav" aria-label="Petworld">
+        <div>
+          <a class="footer-category" href="#our-story">Our story</a>
+          <ul class="footer-subnav">
+            <li><button class="text-button" type="button" data-dialog="faq">FAQ</button></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="footer-category" href="#features">Pet care</a>
+          <ul class="footer-subnav">
+            <li><a href="#medical">Treatments</a></li>
+            <li><a href="#medical">Health</a></li>
+            <li><a href="#grooming">Hygiene</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="footer-category" href="#pet-food">Shop</a>
+          <ul class="footer-subnav">
+            <li><a href="#pet-food">Pet Food</a></li>
+            <li><a href="#accessories">Toys</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-legal">
+        <small>© PETWORLD 2022</small>
+        <button class="text-button privacy" type="button" data-dialog="privacy">Privacy policy</button>
+        <button class="text-button terms" type="button" data-dialog="terms">Terms of use</button>
+      </div>
+      <nav class="socials" aria-label="Social platforms">
+        <a href="https://www.facebook.com/"><img src="assets/facebook.svg" alt="Facebook" width="30" height="30"></a>
+        <a href="https://www.linkedin.com/"><img src="assets/linkedin.svg" alt="LinkedIn" width="30" height="30"></a>
+        <a href="https://www.instagram.com/"><img src="assets/instagram.svg" alt="Instagram" width="30" height="30"></a>
+        <a href="https://x.com/"><img src="assets/twitter.svg" alt="Twitter" width="30" height="30"></a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog class="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-body">
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-body"></p>
+    <form method="dialog"><button class="button button-blue" autofocus>Close</button></form>
+  </dialog>
+</body>
+</html>
